@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { AppBar, Toolbar, Typography, Container } from '@material-ui/core';
 
-export default function layout({children}) {
+export default function Layout({ children }) {
   return (
     <div>
       <Head>
@@ -10,12 +10,13 @@ export default function layout({children}) {
       </Head>
       <AppBar position="static">
         <Toolbar>
-          <Typography>commerce</Typography>
+          <Typography>E-commerce</Typography>
         </Toolbar>
       </AppBar>
-      <Container>
-        {children}
-      </Container>
+      <Container>{children}</Container>
+      <footer>
+        <Typography>All rights reserved. Next E-commerce.</Typography>
+      </footer>
     </div>
   );
 }
