@@ -14,9 +14,9 @@ export default function Layout({ children }) {
         </Toolbar>
       </AppBar>
       <Container>{children}</Container>
-      <footer>
-        <Typography>All rights reserved. Next E-commerce.</Typography>
-      </footer>
+      <footer className={classes.footer}>
+          <Typography>All rights reserved. Next Amazona.</Typography>
+        </footer>
     </div>
   );
 }
